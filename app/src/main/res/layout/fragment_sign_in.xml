@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".fragments.SignInFragment">
+
+    <ImageView
+        android:layout_marginTop="103dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="82dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="207dp"
+        android:layout_height="134dp"
+        android:src="@drawable/group"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="341dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/sf_regular"
+        android:text="E-mail"
+        android:textColor="#AFAFAF"
+        android:background="@drawable/edittext"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="401dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/sf_regular"
+        android:text="Пароль"
+        android:textColor="#AFAFAF"
+        android:background="@drawable/edittext"/>
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signIn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/button_log"
+        android:fontFamily="@font/sf_regular"
+        android:text="Войти"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="601dp"
+        android:layout_marginBottom="138dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/edittext"
+        android:fontFamily="@font/sf_regular"
+        android:text="Регистрация"
+        android:textAllCaps="false"
+        android:textColor="#EF3A01"
+        android:textSize="14sp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="661dp"
+        android:layout_marginBottom="78dp"/>
+
+
+
+</FrameLayout>

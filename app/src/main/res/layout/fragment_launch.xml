@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".fragments.LaunchFragment">
+
+    <ImageView
+        android:layout_marginTop="326dp"
+        android:layout_marginBottom="326dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_width="247dp"
+        android:layout_height="160dp"
+        android:src="@drawable/group"/>
+
+</FrameLayout>
