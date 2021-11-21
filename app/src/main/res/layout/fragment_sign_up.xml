@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".fragments.SignUpFragment">
+
+    <ImageView
+        android:layout_width="207dp"
+        android:layout_height="134dp"
+        android:src="@drawable/group"
+        android:layout_marginTop="59dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="84dp"
+        android:layout_gravity="center_horizontal"/>
+    
+    <EditText
+        android:layout_marginTop="257dp"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:background="@drawable/edittext"
+        android:paddingStart = "16sp"
+        android:paddingEnd="16sp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:hint="Имя"
+        android:fontFamily="@font/sf_regular"
+        android:textSize="14sp"
+        android:textColorHint="#AFAFAF"/>
+
+    <EditText
+        android:layout_marginTop="317dp"
+        android:id="@+id/second_name"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:background="@drawable/edittext"
+        android:paddingStart = "16sp"
+        android:paddingEnd="16sp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:hint="Фамилия"
+        android:fontFamily="@font/sf_regular"
+        android:textSize="14sp"
+        android:textColorHint="#AFAFAF"/>
+
+    <EditText
+        android:layout_marginTop="377dp"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:background="@drawable/edittext"
+        android:paddingStart = "16sp"
+        android:paddingEnd="16sp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:hint="E-mail"
+        android:fontFamily="@font/sf_regular"
+        android:textSize="14sp"
+        android:textColorHint="#AFAFAF"/>
+
+    <EditText
+        android:layout_marginTop="437dp"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:background="@drawable/edittext"
+        android:paddingStart = "16sp"
+        android:paddingEnd="16sp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:hint="Пароль"
+        android:fontFamily="@font/sf_regular"
+        android:textSize="14sp"
+        android:textColorHint="#AFAFAF"/>
+
+    <EditText
+        android:layout_marginTop="497dp"
+        android:id="@+id/again_password"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:background="@drawable/edittext"
+        android:paddingStart = "16sp"
+        android:paddingEnd="16sp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:hint="Повторите пароль"
+        android:fontFamily="@font/sf_regular"
+        android:textSize="14sp"
+        android:textColorHint="#AFAFAF"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/button_log"
+        android:text="Зарегистрироваться"
+        android:fontFamily="@font/sf_regular"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="18sp"
+        android:layout_marginTop="601dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/go_to_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="661dp"
+        android:background="@drawable/edittext"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="18dp"
+        android:text="У меня уже есть аккаунт"
+        android:textColor="#EF3A01"
+        android:textSize="14dp"
+        android:textAllCaps="false"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"/>
+
+</FrameLayout>
