@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    tools:context=".fragments.MainFragment"
+    android:orientation="horizontal">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+        
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="134dp"
+                android:layout_height="44dp"
+                android:id="@+id/watch"
+                android:background="@drawable/button_log"
+                android:text="Смотреть"
+                android:fontFamily="@font/sf_regular"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:layout_marginTop="306dp"
+                android:layout_marginStart="152dp"
+                android:layout_marginEnd="153dp"/>
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/image_1"
+                android:src="@drawable/mag_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="59dp"
+                android:layout_marginStart="67dp"
+                android:layout_marginEnd="68dp"/>
+
+            <ImageView
+                android:id="@+id/image_2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:layout_marginTop="406dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#14c4c4c4">
+
+                <FrameLayout
+                    android:id="@+id/trend"
+                    android:layout_width="121dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="В тренде"
+                        android:textSize="17sp"
+                        android:textColor="#EF3A01"
+                        android:fontFamily="@font/sf_regular"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="15dp"/>
+
+                    <View
+                        android:id="@+id/under_trend"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="#EF3A01"
+                        android:visibility="gone"
+                        android:layout_gravity="bottom"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/New"
+                    android:layout_width="121dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Новое"
+                        android:textSize="17sp"
+                        android:textColor="#EF3A01"
+                        android:fontFamily="@font/sf_regular"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="15dp"/>
+
+                    <View
+                        android:id="@+id/under_new"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="#EF3A01"
+                        android:layout_gravity="bottom"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/For_you"
+                    android:layout_width="121dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="27dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Для Вас"
+                        android:textSize="17sp"
+                        android:textColor="#EF3A01"
+                        android:fontFamily="@font/sf_regular"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="15dp"/>
+
+                    <View
+                        android:id="@+id/under_you"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="#EF3A01"
+                        android:visibility="gone"
+                        android:layout_gravity="bottom"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_marginTop="460dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/recycler"
+                tools:listitem="@layout/item_recycler"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="621dp"
+                android:layout_marginStart="16sp"
+                android:text="Вы смотрели"
+                android:textSize="24sp"
+                android:textColor="#EF3A01"
+                android:fontFamily="@font/sf_regular"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginTop="669dp">
+
+
+                <ImageView
+                    android:id="@+id/video"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rectangle_4"
+                    android:scaleType="centerCrop"/>
+                <ImageView
+                    android:id="@+id/play"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="88dp"
+                    android:layout_marginStart="155dp"
+                    android:layout_marginEnd="156dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/polygon_1"/>
+
+                <TextView
+                    android:layout_marginTop="207dp"
+                    android:layout_marginStart="16sp"
+                    android:id="@+id/title"
+                    android:layout_marginBottom="16sp"
+                    android:fontFamily="@font/sf_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="Alterned Carbon"
+                    android:textColor="@color/white"/>
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="910dp"
+                android:background="@color/background"/>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_marginTop="913dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1C1A19"
+                app:menu="@menu/menu"/>
+
+        </FrameLayout>
+    </ScrollView>
+
+
+</FrameLayout>

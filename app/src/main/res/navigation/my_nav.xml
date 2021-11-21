@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/launchFragment">
+
+    <fragment
+        android:id="@+id/launchFragment"
+        android:name="com.example.worldcinema.fragments.LaunchFragment"
+        android:label="fragment_launch"
+        tools:layout="@layout/fragment_launch" >
+        <action
+            android:id="@+id/to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.worldcinema.fragments.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            android:id="@+id/to_signOutFragment"
+            app:destination="@id/signOutFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signOutFragment"
+        android:name="com.example.worldcinema.fragments.SignUpFragment"
+        android:label="fragment_sign_out"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"
+            android:id="@+id/action_signOutFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_signOutFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.worldcinema.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_movieFragment"
+            app:destination="@id/movieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.example.worldcinema.fragments.MovieFragment"
+        android:label="fragment_movie"
+        tools:layout="@layout/fragment_movie" />
+</navigation>

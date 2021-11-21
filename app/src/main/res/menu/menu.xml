@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Главная" android:icon="@drawable/m1" android:id="@+id/first"/>
+    <item android:title="Подборка" android:icon="@drawable/m2" android:id="@+id/second"/>
+    <item android:title="Коллекции" android:icon="@drawable/m3" android:id="@+id/third" />
+    <item android:title="Профиль" android:icon="@drawable/m4" android:id="@+id/fourth" />
+
+</menu>
